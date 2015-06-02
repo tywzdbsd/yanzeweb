@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<p>
+    <label for="wheelDelta"> 滚动值:(IE/Opera/Chrome)</label>
+    <input type="text" id="wheelDelta"/>
+</p>
+
+<p>
+    <label for="detail"> 滚动值:(Firefox)</label>
+    <input type="text" id="detail"/>
+</p>
+<script type="text/javascript">
+    var oTxt = document.getElementById("txt");
+    /***********************
+     * 函数：判断滚轮滚动方向
+     *************************/
+    var scrollFunc = function (e) {
+        var direct = 0;//指向值
+        e = e || window.event;//e事件的兼容
+        var t1 = document.getElementById("wheelDelta");//取得wheelDelta元素
+        var t2 = document.getElementById("detail");//取得delta元素
+        //滚轮事件判断
+        if (e.wheelDelta) {//如果是IE/Opera/Chrome
+            t1.value = e.wheelDelta;
+            if(e.wheelDelta >= 240){//控制滚动一定距离才反应
+                direct = 1;
+            }else if(e.wheelDelta <= -240){
+                direct = -1;
+            }
+        } else if (e.detail) {//如果是Firefox
+            if(e.detail <= -2){//控制滚动一定距离才反应
+                direct = 1;
+            }else if(e.detail >= 2){
+                direct = -1;
+            }
+            t2.value = e.detail;
+        }
+        if(direct == 1){
+            console.log("up");
+        }
+        if(direct == -1){
+            console.log("down");
+        }
+    }
+    /*注册事件*/
+    if (document.addEventListener) {
+        document.addEventListener('DOMMouseScroll', scrollFunc, false);
+    }//W3C
+    window.onmousewheel = document.onmousewheel = scrollFunc;//IE/Opera/Chrome/Safari
+</script>
+</body>
+</html>
