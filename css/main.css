@@ -7,11 +7,20 @@ ul {
     list-style: none;
 }
 
-html, body {
+body {
     width: 100%;
     height: 100%;
+    cursor: default;
     overflow-x: hidden;
     overflow-y : hidden;
+}
+
+div,p {
+    margin: 0;
+    padding: 0;
+}
+ul {
+    list-style: none;
 }
 
 .nav {
@@ -82,3 +91,58 @@ html, body {
     background: url('../images/icon.png') no-repeat 0 0;
 }
 
+
+#pageContain {
+    overflow: hidden;
+}
+.page {
+    display: none;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.contain {
+    width: 100%;
+    height: 100%;
+    display: none;
+    position: relative;
+    z-index: 0;
+}
+.current .contain,.slide .contain {
+    display: block;
+}
+.current {
+    display: block;
+    z-index: 1;
+}
+.slide {
+    display: block;
+    z-index: 2;
+}
+.page1 {
+    background: #37c1e3;
+}
+.page2 {
+    background: #009922;
+}
+.page3 {
+    background: #992211;
+}
+.page4 {
+    background: #ff00ff;
+}
+.page5 {
+    background: #00ff00;
+}
+.page6 {
+    background: #22ffff;
+}
+
+h1
+{
+    text-align: center;
+    margin-top: 20%;
+}

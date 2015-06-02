@@ -1,10 +1,22 @@
 /**
  * Created by tyw on 15/6/1.
  */
+window.onload = function (){
+    var runPage;
+    runPage = new FullPage({
+        id: 'pageContain',
+        slideTime: 800,
+        effect: {
+            transform: {
+                translate: 'Y'    //垂直滚动，改为X则是水平滚动
+            },
+            opacity: [0, 1]
+        },
+        mode: 'wheel, touch, nav:navBar',
+        easing: 'ease'
+    });
+}
 
-$(function(){
-    init();
-});
 
 function init(){
     //注册事件
@@ -16,14 +28,14 @@ function init(){
 
 //鼠标滚轮事件
 var scrollFunc = function (e) {
-    var direct = 0;//指向值
-    e = e || window.event;//e事件不同浏览器的兼容
-    //滚轮事件判断
-    if (e.wheelDelta) {//如果是IE/Opera/Chrome
-        if(e.wheelDelta >= 240){//控制滚动一定距离才反应
-            direct = 1;
-        }else if(e.wheelDelta <= -240){
-            direct = -1;
+            var direct = 0;//指向值
+            e = e || window.event;//e事件不同浏览器的兼容
+            //滚轮事件判断
+            if (e.wheelDelta) {//如果是IE/Opera/Chrome
+                if(e.wheelDelta >= 240){//控制滚动一定距离才反应
+                    direct = 1;
+                }else if(e.wheelDelta <= -240){
+                    direct = -1;
         }
     } else if (e.detail) {//如果是Firefox
         if(e.detail <= -2){//控制滚动一定距离才反应

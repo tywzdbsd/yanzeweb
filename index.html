@@ -3,20 +3,9 @@
 <head lang="en">
     <meta charset="UTF-8">
     <title>岩泽网络-指尖的精彩</title>
-    <link rel="stylesheet" href="css/nav.css"/>
-    <link rel="stylesheet" href="css/content.css"/>
-    <script type="text/javascript" src="./js/zepto.min.js"></script>
-    <script type="text/javascript" src="js/scroll.js"></script>
-    <script>
-        /*$(function(){
-         var textCompany = $(".nav").val();
-         console.log(textCompany);
-         });*/
-//        var width = $(window).width();
-//        var height = $(window).height();
-        //        alert("屏幕高度："+width+"屏幕宽度："+height);
-
-    </script>
+    <link rel="stylesheet" href="./css/main.css"/>
+    <script type="text/javascript" src="./js/scroll.js"></script>
+    <script type="text/javascript" src="./js/fullPage.min.js"></script>
 </head>
 <body>
 <!--nav-->
@@ -43,23 +32,46 @@
 </div>
 <!--/nav-->
 <!--content-->
-<div class="content">
-    <div class="page-1 current">
-        <div class="middle">
-            page1
+<div id="pageContain">
+    <div class="page page1 current">
+        <div class="contain">
+            <h1 class="txt">第一屏</h1>
         </div>
     </div>
-    <div class="page-2">
-        <div class="middle">
-            <span>page2 上图是笔者写此文时候正在做的一个网站项目，因为行业特殊性，客户在笔者给的几个网站方案中选中了全屏幕大图片显示的网页设计风格，这个网站的首页是一张大尺寸全高清图片全屏显示，显得高端大气上档次，为了保持风格的统一，我也有必要把其他页面都做成全屏显示，这里不多做解释，这样做到结果就是我需要面临了自适应宽度全屏显示这样的一个问题。</span>
+
+    <div class="page page2">
+        <div class="contain">
+            <h1 class="txt">第二屏</h1>
         </div>
     </div>
-    <div class="page-3">
-        <div class="middle">
-            page 3
+
+    <div class="page page3">
+        <div class="contain">
+            <h1 class="txt">第三屏</h1>
+        </div>
+    </div>
+
+    <div class="page page4">
+        <div class="contain">
+            <h1 class="txt">第四屏</h1>
+        </div>
+    </div>
+
+    <div class="page page5">
+        <div class="contain">
+            <h1 class="txt">第五屏</h1>
         </div>
     </div>
 </div>
+
+<ul id="navBar">
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+    <li>5</li>
+</ul>
+
 <!--/content-->
 </body>
 </html>
