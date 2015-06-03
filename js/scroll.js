@@ -10,13 +10,16 @@ window.onload = function (){
             transform: {
                 translate: 'Y'    //垂直滚动，改为X则是水平滚动
             },
-            opacity: [0, 1]
+            opacity: [0, 0.9]
         },
         mode: 'wheel, touch, nav:navBar',
-        easing: 'ease'
+        easing: 'ease',
+        callback: function(index, thisPage) {
+            console.log(index + thisPage);
+        }
     });
+    console.log(thisPage());
 }
-
 
 function init(){
     //注册事件

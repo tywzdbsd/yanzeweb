@@ -42,14 +42,18 @@ ul {
     cursor: pointer;
 }
 
-.nav ul {
+#navBar {
+    z-index: 3;
     float: right;
     margin-right: 10px;
     height: 100%;
-
 }
 
-.nav ul li {
+#navBar .active {
+    color: #f28e00;
+}
+
+#navBar li {
     float: left;
     margin-right: 15px;
     height: 80px;
@@ -57,7 +61,7 @@ ul {
     line-height: 80px;
 }
 
-.nav ul li:hover {
+#navBar li:hover {
     color: #f28e00;
     cursor: pointer;
 }
@@ -140,6 +144,10 @@ ul {
 .page6 {
     background: #22ffff;
 }
+.page7 {
+    background: #159430;
+}
+
 
 h1
 {
