@@ -3,9 +3,15 @@
 <head lang="en">
     <meta charset="UTF-8">
     <title>岩泽网络-指尖的精彩</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <!-- 引入fullpage的css -->
+    <link rel="stylesheet" type="text/css" href="./css/jquery.fullPage.css" />
+    <!-- fullpage.js依赖于jquery库 -->
+    <script type="text/javascript" src="./js/jquery-1.7.2.min.js"></script>
+    <script type="text/javascript" src="./js/jquery.fullPage.min.js"></script>
+    <!-- 自己的css和js -->
     <link rel="stylesheet" href="./css/main.css"/>
     <script type="text/javascript" src="./js/scroll.js"></script>
-    <script type="text/javascript" src="./js/fullPage.min.js"></script>
 </head>
 <body>
 <!--nav-->
@@ -20,63 +26,52 @@
         <a class="icon-login" href="#"></a>
     </div>
 
-    <ul id="navBar">
-        <li>首&nbsp;&nbsp;&nbsp;&nbsp;页</li>
-        <li>新闻中心</li>
-        <li>公司简介</li>
-        <li>产品领域</li>
-        <li>合作伙伴</li>
-        <li>人才招聘</li>
-        <li>联系我们</li>
+    <!--<ul id="menu">-->
+        <!--<li data-menuanchor="page1" class="active"><a  href="#page1">首&nbsp;&nbsp;&nbsp;&nbsp;页</a></li>-->
+        <!--<li data-menuanchor="page2"><a href="#page2">新闻中心</a></li>-->
+        <!--<li data-menuanchor="page3"><a href="#page3">公司简介</a></li>-->
+        <!--<li data-menuanchor="page4"><a href="#page4">产品领域</a></li>-->
+        <!--<li data-menuanchor="page5"><a href="#page5">合作伙伴</a></li>-->
+        <!--<li data-menuanchor="page6"><a href="#page6">人才招聘</a></li>-->
+        <!--<li data-menuanchor="page7"><a href="#page7">联系我们</a></li>-->
+    <!--</ul>-->
+    <ul id="menu">
+        <li data-menuanchor="page1" class="active"><a href="#page1">第1屏</a></li>
+        <li data-menuanchor="page2"><a href="#page2">第2屏</a></li>
+        <li data-menuanchor="page3"><a href="#page3">第3屏</a></li>
+        <li data-menuanchor="page4"><a href="#page4">第4屏</a></li>
+        <li data-menuanchor="page5"><a href="#page5">第5屏</a></li>
+        <li data-menuanchor="page6"><a href="#page6">第6屏</a></li>
+        <li data-menuanchor="page7"><a href="#page7">第7屏</a></li>
     </ul>
 </div>
 <!--/nav-->
-<!--content-->
-<div id="pageContain">
-    <div class="page page1 current">
-        <div class="contain">
-            <h1 class="txt">第一屏</h1>
+<!--slide area-->
+<div id="ido">
+    <div class="section section1 active">
+        <div class="content">
+            <h1>每一个section是一屏，这是第一屏</h1>
         </div>
     </div>
-
-    <div class="page page2">
-        <div class="contain">
-            <h1 class="txt">第二屏</h1>
-        </div>
+    <div class="section section2">
+        <h1>每一个section是一屏，这是第二屏</h1>
     </div>
-
-    <div class="page page3">
-        <div class="contain">
-            <h1 class="txt">第三屏</h1>
-        </div>
+    <div class="section section3">
+        <h1>每一个section是一屏，这是第三屏</h1>
     </div>
-
-    <div class="page page4">
-        <div class="contain">
-            <h1 class="txt">第四屏</h1>
-        </div>
+    <div class="section section4">
+        <h1>每一个section是一屏，这是第四屏</h1>
     </div>
-
-    <div class="page page5">
-        <div class="contain">
-            <h1 class="txt">第五屏</h1>
-        </div>
+    <div class="section section5">
+        <h1>每一个section是一屏，这是第5屏--图片背景</h1>
     </div>
-
-    <div class="page page6">
-        <div class="contain">
-            <h1 class="txt">第六屏</h1>
-        </div>
+    <div class="section section6">
+        <h1>每一个section是一屏，这是第6屏--图片背景</h1>
     </div>
-
-    <div class="page page7">
-        <div class="contain">
-            <h1 class="txt">第七屏</h1>
-        </div>
+    <div class="section section7">
+        <h1>每一个section是一屏，这是第6屏--图片背景</h1>
     </div>
 </div>
-
-
 <!--/content-->
 </body>
 </html>

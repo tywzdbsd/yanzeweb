@@ -12,17 +12,19 @@ body {
     height: 100%;
     cursor: default;
     overflow-x: hidden;
-    overflow-y : hidden;
+    overflow-y: hidden;
 }
 
-div,p {
+div, p {
     margin: 0;
     padding: 0;
 }
+
 ul {
     list-style: none;
 }
 
+/*导航条*/
 .nav {
     position: fixed;
     top: 0;
@@ -42,29 +44,34 @@ ul {
     cursor: pointer;
 }
 
-#navBar {
-    z-index: 3;
+/*#menu*/
+#menu {
     float: right;
     margin-right: 10px;
     height: 100%;
 }
 
-#navBar .active {
-    color: #f28e00;
-}
-
-#navBar li {
+#menu li {
     float: left;
     margin-right: 15px;
     height: 80px;
-    color: #878787;
+    font-size: 16px;
     line-height: 80px;
 }
 
-#navBar li:hover {
+#menu a {
+    float: left;
+    background-color: #fff;
+    color: #333;
+    text-decoration: none;
+}
+
+#menu .active a {
     color: #f28e00;
     cursor: pointer;
 }
+
+/*/#menu*/
 
 .nav .nav-right {
     float: right;
@@ -95,62 +102,66 @@ ul {
     background: url('../images/icon.png') no-repeat 0 0;
 }
 
+/*/导航条*/
 
-#pageContain {
-    overflow: hidden;
-}
-.page {
-    display: none;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-.contain {
-    width: 100%;
-    height: 100%;
-    display: none;
-    position: relative;
-    z-index: 0;
-}
-.current .contain,.slide .contain {
+/*内容*/
+#ido .section1 {
     display: block;
-}
-.current {
-    display: block;
-    z-index: 1;
-}
-.slide {
-    display: block;
-    z-index: 2;
-}
-.page1 {
-    background: #37c1e3;
-}
-.page2 {
-    background: #009922;
-}
-.page3 {
-    background: #992211;
-}
-.page4 {
-    background: #ff00ff;
-}
-.page5 {
-    background: #00ff00;
-}
-.page6 {
-    background: #22ffff;
-}
-.page7 {
-    background: #159430;
+    background-color: #BFDA00;
 }
 
-
-h1
-{
-    text-align: center;
-    margin-top: 20%;
+#ido .section1 .content{
+    display: block;
+    margin-left:auto;
+    margin-right:auto;
+    width:1000px;
 }
+
+#ido .section1 .content h1 {
+    -webkit-backface-visibility: visible;
+    -webkit-transform-origin: center center;
+    -webkit-animation: demo 2s 0s 1 ease-in normal forwards;
+}
+
+@-webkit-keyframes demo {
+    0% {
+        opacity: 0;
+        top: -100px;
+    }
+    86% {
+        top: 5px;
+    }
+    93% {
+        top: -5px;
+    }
+    100% {
+        opacity: 1;
+        top: 0px;
+    }
+}
+
+#ido .section2 {
+    background-color: #2EBE21;
+}
+
+#ido .section3 {
+    background-color: #2C3E50;
+}
+
+#ido .section4 {
+    background-color: #FF9900;
+}
+
+#ido .section5 {
+    background: url(../images/bg-1.jpg) 50%;
+}
+
+#ido .section6 {
+    background: url(../images/bg-2.jpg) 50%;
+}
+
+#ido .section7 {
+    background: #FF3184;
+}
+
+/*/内容*/
