@@ -3,6 +3,8 @@
 <head lang="en">
     <meta charset="UTF-8">
     <title>岩泽网络-指尖的精彩</title>
+    <meta name=”description” content=”岩泽科技有限公司是一家专业的移动互联网公司，由资深移动App工程师组成”>
+    <meta name=”keyword” content=”移动,互联网,app,app制作“>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <!-- 引入fullpage的css -->
     <link rel="stylesheet" type="text/css" href="./css/jquery.fullPage.css" />
@@ -25,32 +27,24 @@
         <!--</div>-->
         <a class="icon-login" href="#"></a>
     </div>
-
-    <!--<ul id="menu">-->
-        <!--<li data-menuanchor="page1" class="active"><a  href="#page1">首&nbsp;&nbsp;&nbsp;&nbsp;页</a></li>-->
-        <!--<li data-menuanchor="page2"><a href="#page2">新闻中心</a></li>-->
-        <!--<li data-menuanchor="page3"><a href="#page3">公司简介</a></li>-->
-        <!--<li data-menuanchor="page4"><a href="#page4">产品领域</a></li>-->
-        <!--<li data-menuanchor="page5"><a href="#page5">合作伙伴</a></li>-->
-        <!--<li data-menuanchor="page6"><a href="#page6">人才招聘</a></li>-->
-        <!--<li data-menuanchor="page7"><a href="#page7">联系我们</a></li>-->
-    <!--</ul>-->
     <ul id="menu">
-        <li data-menuanchor="page1" class="active"><a href="#page1">第1屏</a></li>
-        <li data-menuanchor="page2"><a href="#page2">第2屏</a></li>
-        <li data-menuanchor="page3"><a href="#page3">第3屏</a></li>
-        <li data-menuanchor="page4"><a href="#page4">第4屏</a></li>
-        <li data-menuanchor="page5"><a href="#page5">第5屏</a></li>
-        <li data-menuanchor="page6"><a href="#page6">第6屏</a></li>
-        <li data-menuanchor="page7"><a href="#page7">第7屏</a></li>
+        <li data-menuanchor="page1" class="active"><a href="#page1">首页</a></li>
+        <li data-menuanchor="page2"><a href="#page2">新闻中心</a></li>
+        <li data-menuanchor="page3"><a href="#page3">公司简介</a></li>
+        <li data-menuanchor="page4"><a href="#page4">产品领域</a></li>
+        <li data-menuanchor="page5"><a href="#page5">合作伙伴</a></li>
+        <li data-menuanchor="page6"><a href="#page6">人才招聘</a></li>
+        <li data-menuanchor="page7"><a href="#page7">联系我们</a></li>
     </ul>
 </div>
 <!--/nav-->
 <!--slide area-->
 <div id="ido">
     <div class="section section1 active">
-        <div class="content">
-            <h1>每一个section是一屏，这是第一屏</h1>
+        <!--有个隐藏的class=fp-tableCell 的 div-->
+        <!--<h1>个性化定制您的移动互联需求</h1>-->
+        <div class="showCompany">
+
         </div>
     </div>
     <div class="section section2">
@@ -69,9 +63,15 @@
         <h1>每一个section是一屏，这是第6屏--图片背景</h1>
     </div>
     <div class="section section7">
-        <h1>每一个section是一屏，这是第6屏--图片背景</h1>
+        <iframe src="./baiduMap.html" width="100%" height="100%">
+            脚本之家使用了框架技术，但是您的浏览器不支持框架，请升级您的浏览器以便正常访问脚本之家。
+        </iframe>
+        <!--<div id="allmap"></div>-->
     </div>
 </div>
 <!--/content-->
 </body>
 </html>
+<!--baidu map-->
+<script type="text/javascript" src="http://api.map.baidu.com/api?v=1.3&ak=QklIRY0OckRuZWnpOs9FV6Mt"></script>
+<script type="text/javascript" src="./js/seeMap.js"></script>

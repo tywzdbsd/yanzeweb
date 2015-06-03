@@ -107,17 +107,18 @@ ul {
 /*内容*/
 #ido .section1 {
     display: block;
-    background-color: #BFDA00;
+    background: url('../images/bg-1.jpg') no-repeat;
+    background-size: cover;
 }
 
-#ido .section1 .content{
+#ido .section1 .fp-tableCell {
     display: block;
-    margin-left:auto;
-    margin-right:auto;
-    width:1000px;
+    margin: 0 auto;
+    width: 1000px;
+    border:1px solid #000;
 }
 
-#ido .section1 .content h1 {
+#ido .section1 .fp-tableCell h1 {
     -webkit-backface-visibility: visible;
     -webkit-transform-origin: center center;
     -webkit-animation: demo 2s 0s 1 ease-in normal forwards;
@@ -153,15 +154,16 @@ ul {
 }
 
 #ido .section5 {
-    background: url(../images/bg-1.jpg) 50%;
+    background: url(../images/bg-1.jpg) ;
 }
 
 #ido .section6 {
-    background: url(../images/bg-2.jpg) 50%;
+    background: url(../images/bg-2.jpg) ;
 }
 
 #ido .section7 {
-    background: #FF3184;
+
 }
+
 
 /*/内容*/
