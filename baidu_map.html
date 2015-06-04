@@ -33,12 +33,12 @@
     //信息窗口
     var opts = {
         width: 200, // 信息窗口宽度
-        height: 60, // 信息窗口高度
+        height: 80, // 信息窗口高度
         title: "杭州岩泽科技有限责任公司", // 信息窗口标题
         enableMessage: true,//设置允许信息窗发送短息
         message: "欢迎来到杭州岩泽科技有限责任公司！" // 信息内容
     }
-    var infoWindow = new BMap.InfoWindow("地址：拱墅区登云路小河路口嘉泰馨庭9幢2单元1501室", opts); // 创建信息窗口对象
+    var infoWindow = new BMap.InfoWindow("地址：拱墅区登云路小河路口嘉泰馨庭9幢2单元1501室.\<br\>\<span style='display:block;margin-top:5px;'\>电话：159-6818-0371\<span\>", opts); // 创建信息窗口对象
     map.openInfoWindow(infoWindow,new BMap.Point(120.138802, 30.321761)); //开启信息窗口
     marker.addEventListener("click", function () {
     });
